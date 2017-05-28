@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form html</title>
+		<script src="./jquery.min.js"></script>
+		<script>
+			function requestAjax() {
+				$.ajax({
+					url: "https://jsonplaceholder.typicode.com/posts",
+					method: "GET"
+				}).then(
+					function(data) {
+						$("body").html(JSON.stringify(data));
+					}
+				);
+			}
+		</script>
+	</head>
+	<body>
+		<!--
+			Create -> POST
+			Read -> GET
+			Update -> PUT
+			Delete -> DELETE
+		-->
+		<form action="http://www.example.com/" method="POST">
+			<label for="username">Username:</label>
+			<input type="text" name="username" id="username">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" required>
+			<br>
+			<label>
+				<input type="checkbox" name="gender" value="0">
+				Monday
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="gender" value="1">
+				Tuesday
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name="gender" value="2">
+				Wednesday
+			</label>
+			
+			<br>
+			<input type="email" maxlength="20">
+
+			<br>
+			<input type="number">
+
+			<br>
+			<input type="tel">
+
+			<br>
+			<input type="button" value="Ajax Button" onclick="requestAjax();">
+
+			<br>
+			<input type="hidden" value="hidden">
+
+			<br>
+			<button type="submit">A Button</button>
+
+			<br>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+h1 {
+	color: blue;
+}
+
+p {
+	background: brown;
+	color: white;
+}
+
+#first {
+	text-decoration: underline;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.gray-bg {
+	background: gray;
+}
+
+[href]{
+	font-size: 60px;
+}
+
+[type="password"] {
+	box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+nav a {
+	text-decoration: line-through;
+}
+
+nav > a {
+	font-weight: bold;
+}
+
+img:hover {
+	box-shadow: 0 -3px 5px rgba(0,0,0,0.6);
+	border-radius: 50px;
+}
+
+a:active {
+	color: #ff0000;
+}
+
+input:focus {
+	border: 1px dashed red;
+}
+
+p:hover {
+	background: yellow;
+}
+
+html {
+	font-family: "Tahoma", "Arial", san-serif;
+}
