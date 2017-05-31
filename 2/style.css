@@ -13,12 +13,12 @@
     cursor: pointer;
 }
 
-.menu > span:hover {
+.menu span:hover {
 	background: #9CD08F;
 	color: #FFFFFF;
 }
 
-.menu > span:hover > .menu_vertical {
+.menu span:hover > .menu_vertical {
 	display: block;
 }
 
@@ -28,9 +28,17 @@
 	position: absolute;
 }
 
-.menu_vertical > span {
+.menu_vertical span {
 	background: #D5B0AC;
 	display: block;
-	margin-bottom: 1px;
 }
 
+.menu_vertical > span:hover {
+	position: relative;
+}
+
+.menu_vertical > span:hover > .menu_vertical {
+	position: absolute;
+	display: inline;
+	left: 100px;
+}
